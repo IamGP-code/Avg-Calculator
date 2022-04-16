@@ -1,0 +1,132 @@
+<html>
+    <title>
+        Average Calculator
+    </title>
+    <style>
+body{
+    background-color: lightgrey;
+}
+th{
+            font-size: large;
+            padding:  0 40 0 40;
+        }
+        td{
+            font-weight: bold;
+    background-color: rgb(209, 207, 207);
+            /* background-color: azure; */
+           padding:  auto;
+           text-align: center;
+            
+        }
+        tr{
+            width: max-content;
+        }
+table{
+    background-color:rgba(136, 122, 122, 0.753);
+    text-align: center;
+}
+
+input:hover{
+    background-color: #eaece5;
+}
+input{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+div{
+    background-color:aliceblue;
+bottom: 0;
+width: 100%;
+}
+footer{
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    /* /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script> 
+<script>
+    function total()
+    {
+        var a=parseInt(document.getElementById("t1").value);
+        var b=parseInt(document.getElementById("t2").value);
+        var c=parseInt(document.getElementById("t3").value);
+
+        var d=parseInt(document.getElementById("t4").value);
+        var e=parseInt(document.getElementById("t5").value);
+
+        t6.value=a+b+c;
+        t7.value=parseInt(t6.value)+parseInt(d)+parseInt(e);
+        t9.value=parseInt(t7.value)/2;
+    if(parseInt(t7.value)>=(40||41))
+        t8.value="Min Avg Acquired";
+        
+        else
+        t8.value="Min Avg Needed";
+        
+   
+        if(parseInt(t9.value)>=(20||20.5))
+        t10.value="Min Avg Acquired";
+        else
+        t10.value="Min Avg Needed";
+    }
+        </script>
+        <body>
+<div id="header"><h1> <u><center>𝔸𝕧𝕖𝕣𝕒𝕘𝕖 𝕄𝕒𝕣𝕜𝕤 ℂ𝕒𝕝𝕔𝕦𝕝𝕒𝕥𝕠𝕣</center></u></h1>
+</div>
+<hr >
+<br>
+  <center>       
+         <table >
+<tr>
+    <th>IA1</th><th>IA2</th><th>IA3</th>
+</tr>
+<tr>
+    <td><input type="text" id="t1" ></td>
+    <td><input type="text" id="t2" ></td>
+    <td><input type="text" id="t3" ></td>
+
+</tr>  
+<tr>
+    <td colspan="2"> Assignment Marks   </td>
+    <td><input type="text" id="t4" ></td>
+
+</tr>   
+<tr>
+    <td colspan="2"> Seminar Marks</td>
+    <td><input type="text" id="t5" ></td>
+
+</tr>   
+<tr>
+    <td colspan="3"><b><input style="background-color: #f0f0f0 " type="submit" onclick="total()" ></b></td>
+</tr>
+<tr>
+    <td colspan="2">Total IA Marks</td>
+    <td><input type="text" id="t6" ></td>
+</tr>   
+
+<tr>
+    <td >Pass Marks for 100 is 40</td>
+    <td><input type="text" id="t7" ></td>
+    <td><input type="text" id="t8" ></td>
+</tr>   
+<tr>
+    <td> Pass Marks for 50 is 20</td>
+    <td><input type="text" id="t9" ></td>
+    <td><input type="text" id="t10" ></td>
+</tr>  
+</table>
+</center>
+<footer>
+    <hr>
+  <p>Made By :- 𝕸 𝕲𝖚𝖗𝖚 𝕻𝖗𝖆𝖘𝖆𝖉 </p>
+</footer>
+</body>
+</html>
